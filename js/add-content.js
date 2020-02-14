@@ -32,7 +32,7 @@ var beerType = function () {
     }
     document.write('<h3>' + suggestion + '</h3>');
 }
-beerType ()
+beerType ();
 
 
 
