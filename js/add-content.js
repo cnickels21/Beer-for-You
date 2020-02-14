@@ -15,13 +15,24 @@ function runSubHeader() {
 }
 runSubHeader('How many beers do you drink a week?');
 
-// function not finished
-// function beerType(){
-//     var flavor = prompt('What is your favorite type of beer?').toLowerCase; 
-//     var response;
-//     document.write('<h3>' + response + '</h3>')
-// }
-// beerType('What is your favorite type of beer?')
+// Lab 7
+
+var beerType = function () {
+    var type = prompt('What is your favorite brand of beer?').toLowerCase();
+    var suggestion;
+    while (type === '') {
+        type = prompt('Please enter a domestic, craft, or import.');
+    }
+    if (type === 'domestic') {
+        suggestion = 'Check out our domestic section.';
+    }  else if (type === 'craft') {
+        suggestion = 'Check out our craft section.';
+    }  else if (type === 'import') {
+        suggestion = 'Check out our import section.';
+    }
+    document.write('<h3>' + suggestion + '</h3>');
+}
+beerType ()
 
 
 
@@ -84,14 +95,6 @@ getItem();
 //showOrder();
 
 
-
-// function not finished
-// function beerType(){
-//     var flavor = prompt('What is your favorite type of beer?').toLowerCase; 
-//     var response;
-//     document.write('<h3>' + response + '</h3>')
-// }
-// beerType('What is your favorite type of beer?')
 
 function makeDate() {
     var currentDate = new Date();
